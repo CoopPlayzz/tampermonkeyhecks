@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Wordle Heck
-// @version 0.0.2
+// @version 0.0.e
 // @description A  Wordle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
@@ -9,6 +9,8 @@
 // @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/wordle/heck.tampermonkey.js
 // @match https://www.nytimes.com/games/wordle*
 // ==/UserScript==
+
+(async function ()  {
 var wordleLetters = {
     lettersRow: {
         q:0,
@@ -39,7 +41,7 @@ var wordleLetters = {
         m:2
     }
 }
-var arrayrowkeys = document.getElementsByTagName("game-app")[0].$keyboard.$keyboard.getElementsByClassName("row")
+var arrayrowkeys = await document.getElementsByTagName("game-app")[0].$keyboard.$keyboard.getElementsByClassName("row")
 
 for (let eeeee = 0; eeeee <= 3; eeeee++) {
     const rowe = arrayrowkeys[eeeee].getElementsByTagName("button")
@@ -48,3 +50,4 @@ for (let eeeee = 0; eeeee <= 3; eeeee++) {
         element.setAttribute("class", "letter_" + rowe.getAttribute("data-key"))
     }
 }
+})();
