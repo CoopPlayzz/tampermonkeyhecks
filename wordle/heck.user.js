@@ -5,8 +5,8 @@
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
 // @icon https://www.google.com/s2/favicons?domain=https://www.nytimes.com/games/wordle/index.html
-// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/wordle/heck.tampermonkey.js
-// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/wordle/heck.tampermonkey.js
+// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/wordle/heck.user.js
+// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/wordle/heck.user.js
 // @match https://www.nytimes.com/games/wordle*
 // ==/UserScript==
 
