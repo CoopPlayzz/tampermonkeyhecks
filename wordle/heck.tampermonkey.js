@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Wordle Heck
-// @version 0.0.8.1
+// @version 0.0.8.2
 // @description A  Wordle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
@@ -58,6 +58,18 @@ for (let eeeee = 0; eeeee <= 3; eeeee++) {
 
 document.getElementsByTagName("game-app")[0].shadowRoot.children.item(1).getElementsByTagName("header")[0].getElementsByClassName("menu-right")[0].innerHTML = "<button onclick=\"if(confirm('Are you. sure you want to do hacks?')){dohacks()}\" id=\"hacks-button\" style=\"color:#fff;\" class=\"icon\" aria-label=\"Hacks\" tabindex=\"-1\">do Answer</button>" + await document.getElementsByTagName("game-app")[0].shadowRoot.children.item(1).getElementsByTagName("header")[0].getElementsByClassName("menu-right")[0].innerHTML;
 
-function dohacks(){alert("test | coming soon")}
+var scripttoinsert = "async function dohacks() {var arrayrowkeys = await document.getElementsByTagName(\"game-app\")[0].$keyboard.$keyboard.getElementsByClassName(\"row\");"
+//letter 1
+scripttoinsert =+ "await arrayrowkeys[" + wordleLetters.lettersRow[JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(0)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(0) + "\").click();"
+scripttoinsert =+ "awaitarrayrowkeys[" + wordleLetters.lettersRow[JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(1)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(1) + "\").click();"
+scripttoinsert =+ "await arrayrowkeys[" + wordleLetters.lettersRow[JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(2)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(2) + "\").click();"
+scripttoinsert =+ "await arrayrowkeys[" + wordleLetters.lettersRow[JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(3)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(3) + "\").click();"
+scripttoinsert =+ "await arrayrowkeys[" + wordleLetters.lettersRow[JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(4)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(4) + "\").click();"
+scripttoinsert =+ "await arrayrowkeys[2].getElementsByClassName(\"letter_↵\").click();}"
+//JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(0)
 
+
+var scriptele = document.createElement("script")
+scriptele.innerHTML = scripttoinsert
+await document.head.appendChild(scriptele)
 })();
