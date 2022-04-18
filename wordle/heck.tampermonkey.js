@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Wordle Heck
-// @version 0.0.7.2
+// @version 0.0.8
 // @description A  Wordle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
@@ -45,13 +45,18 @@ var arrayrowkeys = await document.getElementsByTagName("game-app")[0].$keyboard.
 
 for (let eeeee = 0; eeeee <= 3; eeeee++) {
     var rowe = await arrayrowkeys[eeeee].getElementsByTagName("button")
-    for (let lop = 0; lop <= rowe.length; lop++) {
+    if (rowe != undefined && rowe != null){for (let lop = 0; lop <= rowe.length; lop++) {
         var element = await rowe[lop];
         //if(element == undefined || element == null) return;
         console.log(rowe)
         console.log(element)
         console.log("row: " + eeeee + " | keynum: " + lop + " | Element: " + element)
-        if(element != undefined && element != null) {await element.setAttribute("class", "letter_" + await element.getAttribute("data-key"))}
-    }
+        if(element != undefined && element != null) {await element.classList.add("letter_" + await element.getAttribute("data-key"))}
+    }}
 }
+
+document.getElementsByTagName("game-app")[0].shadowRoot.children.item(1).getElementsByTagName("header")[0].getElementsByClassName("menu-right")[0].innerHTML = "<button onclick=\"if(confirm('Are you. sure you want to do hacks?')){dohacks()}\" id=\"hacks-button\" style=\"color:#fff;\" class=\"icon\" aria-label=\"Hacks\" tabindex=\"-1\">do Answer</button>" + await document.getElementsByTagName("game-app")[0].shadowRoot.children.item(1).getElementsByTagName("header")[0].getElementsByClassName("menu-right")[0].innerHTML;
+
+function dohacks(){alert("test | coming soon")}
+
 })();
