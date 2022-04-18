@@ -47,6 +47,7 @@ for (let eeeee = 0; eeeee <= 3; eeeee++) {
     var rowe = await arrayrowkeys[eeeee].getElementsByTagName("button")
     for (let lop = 0; lop = rowe.length; lop++) {
         var element = await rowe[lop];
+        console.log(rowe)
         console.log(element)
         await element.setAttribute("class", "letter_" + await rowe.getAttribute("data-key"))
     }
