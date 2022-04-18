@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Wordle Heck
-// @version 1.0.0
-// @description A  Wordle Hack that enters the solution for u
+// @version 1.0.1
+// @description A Wordle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
 // @icon https://www.google.com/s2/favicons?domain=https://www.nytimes.com/games/wordle/index.html
@@ -11,63 +11,5 @@
 // ==/UserScript==
 
 (async function ()  {
-var wordleLetters = {
-    lettersRow: {
-        q:0,
-        w:0,
-        e:0,
-        r:0,
-        t:0,
-        y:0,
-        u:0,
-        i:0,
-        o:0,
-        p:0,
-        a:1,
-        s:1,
-        d:1,
-        f:1,
-        g:1,
-        h:1,
-        j:1,
-        k:1,
-        l:1,
-        z:2,
-        x:2,
-        c:2,
-        v:2,
-        b:2,
-        n:2,
-        m:2
-    }
-}
-var arrayrowkeys = await document.getElementsByTagName("game-app")[0].$keyboard.$keyboard.getElementsByClassName("row")
-
-for (let eeeee = 0; eeeee <= 3; eeeee++) {
-    var rowe032 = await arrayrowkeys[eeeee]
-    if (rowe032 != undefined && rowe032 != null){var rowe = rowe032.getElementsByTagName("button")
-    for (let lop = 0; lop <= rowe.length; lop++) {
-        var element = await rowe[lop];
-        //if(element == undefined || element == null) return;
-        console.log(rowe)
-        console.log(element)
-        console.log("row: " + eeeee + " | keynum: " + lop + " | Element: " + element)
-        if(element != undefined && element != null) {await element.classList.add("letter_" + await element.getAttribute("data-key"))}
-    }}
-}
-
-document.getElementsByTagName("game-app")[0].shadowRoot.children.item(1).getElementsByTagName("header")[0].getElementsByClassName("menu-right")[0].innerHTML = "<button onclick=\"if(confirm('Are you. sure you want to do hacks?')){dohacks()}\" id=\"hacks-button\" style=\"color:#fff;\" class=\"icon\" aria-label=\"Hacks\" tabindex=\"-1\">do Answer</button>" + await document.getElementsByTagName("game-app")[0].shadowRoot.children.item(1).getElementsByTagName("header")[0].getElementsByClassName("menu-right")[0].innerHTML;
-
-var scripttoinsert = "async function dohacks() {var arrayrowkeys = await document.getElementsByTagName(\"game-app\")[0].$keyboard.$keyboard.getElementsByClassName(\"row\");"
-//letter 1
-scripttoinsert = scripttoinsert + "await arrayrowkeys[" + wordleLetters.lettersRow[await JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(0)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(0) + "\")[0].click();"
-scripttoinsert = scripttoinsert + "await arrayrowkeys[" + wordleLetters.lettersRow[await JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(1)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(1) + "\")[0].click();"
-scripttoinsert = scripttoinsert + "await arrayrowkeys[" + wordleLetters.lettersRow[await JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(2)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(2) + "\")[0].click();"
-scripttoinsert = scripttoinsert + "await arrayrowkeys[" + wordleLetters.lettersRow[await JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(3)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(3) + "\")[0].click();"
-scripttoinsert = scripttoinsert + "await arrayrowkeys[" + wordleLetters.lettersRow[await JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(4)] + "].getElementsByClassName(\"letter_" + JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(4) + "\")[0].click();"
-scripttoinsert = scripttoinsert + "await arrayrowkeys[2].getElementsByClassName(\"letter_↵\")[0].click();}"
-//JSON.parse(localStorage.getItem("nyt-wordle-state"))["solution"].charAt(0)
-var scriptele = document.createElement("script")
-scriptele.text = scripttoinsert
-await document.head.appendChild(scriptele)
+var _0x4ceb3a=_0x5d32;(function(_0x39a456,_0x40bf45){var _0x251d38={_0x123c5f:0x135,_0xa41716:'0x14d',_0x4c1c39:0x15d,_0x3bd3dd:0x15a,_0x35817c:0x164,_0x28e32d:'0x16b'},_0x24f61c=_0x5d32,_0x3e3fd1=_0x39a456();while(!![]){try{var _0x2719dc=-parseInt(_0x24f61c(0x158))/0x1+-parseInt(_0x24f61c('0x14a'))/0x2+parseInt(_0x24f61c(_0x251d38._0x123c5f))/0x3*(-parseInt(_0x24f61c(_0x251d38._0xa41716))/0x4)+-parseInt(_0x24f61c(0x165))/0x5*(parseInt(_0x24f61c(_0x251d38._0x4c1c39))/0x6)+parseInt(_0x24f61c(_0x251d38._0x3bd3dd))/0x7*(parseInt(_0x24f61c(0x15c))/0x8)+-parseInt(_0x24f61c(0x13a))/0x9*(-parseInt(_0x24f61c(0x13c))/0xa)+-parseInt(_0x24f61c(_0x251d38._0x35817c))/0xb*(-parseInt(_0x24f61c(_0x251d38._0x28e32d))/0xc);if(_0x2719dc===_0x40bf45)break;else _0x3e3fd1['push'](_0x3e3fd1['shift']());}catch(_0x4fa633){_0x3e3fd1['push'](_0x3e3fd1['shift']());}}}(_0x5e2c,0x49833));var _0x2d4179=(function(){var _0xe8badf=!![];return function(_0x5a5e76,_0x46ea90){var _0x55e48e=_0xe8badf?function(){var _0x490eab=_0x5d32;if(_0x46ea90){var _0x425fbb=_0x46ea90[_0x490eab('0x156')](_0x5a5e76,arguments);return _0x46ea90=null,_0x425fbb;}}:function(){};return _0xe8badf=![],_0x55e48e;};}()),_0x5c1835=_0x2d4179(this,function(){var _0x5ed602={_0x44be31:'0x168',_0x5e4263:'0x139',_0x274eff:0x141,_0x2305d1:0x140,_0xbc6e00:'0x13f',_0x478130:'0x169',_0x2ccc9b:'0x15f',_0x37b5f4:'0x13d',_0x5845ab:0x143,_0x2612ec:'0x152',_0x405b6f:'0x143'},_0x1e38eb=_0x5d32,_0x11aa7d;try{var _0x201f00=Function(_0x1e38eb(_0x5ed602._0x44be31)+_0x1e38eb(0x151)+');');_0x11aa7d=_0x201f00();}catch(_0x4dae94){_0x11aa7d=window;}var _0x1202d2=_0x11aa7d[_0x1e38eb(0x139)]=_0x11aa7d[_0x1e38eb(_0x5ed602._0x5e4263)]||{},_0x39a0bb=[_0x1e38eb(_0x5ed602._0x274eff),_0x1e38eb(0x13e),_0x1e38eb(_0x5ed602._0x2305d1),_0x1e38eb(_0x5ed602._0xbc6e00),_0x1e38eb(0x145),_0x1e38eb('0x136'),_0x1e38eb(_0x5ed602._0x478130)];for(var _0x4dacb9=0x0;_0x4dacb9<_0x39a0bb['length'];_0x4dacb9++){var _0x3fbd22=_0x2d4179[_0x1e38eb(_0x5ed602._0x2ccc9b)][_0x1e38eb(_0x5ed602._0x37b5f4)][_0x1e38eb(_0x5ed602._0x5845ab)](_0x2d4179),_0x54bfd2=_0x39a0bb[_0x4dacb9],_0x367e8a=_0x1202d2[_0x54bfd2]||_0x3fbd22;_0x3fbd22[_0x1e38eb(_0x5ed602._0x2612ec)]=_0x2d4179[_0x1e38eb(0x143)](_0x2d4179),_0x3fbd22[_0x1e38eb('0x138')]=_0x367e8a['toString'][_0x1e38eb(_0x5ed602._0x405b6f)](_0x367e8a),_0x1202d2[_0x54bfd2]=_0x3fbd22;}});function _0x5d32(_0x311668,_0x40206b){var _0x4f45b2=_0x5e2c();return _0x5d32=function(_0x5c1835,_0x2d4179){_0x5c1835=_0x5c1835-0x134;var _0x14ac86=_0x4f45b2[_0x5c1835];return _0x14ac86;},_0x5d32(_0x311668,_0x40206b);}_0x5c1835();var wordleLetters={'lettersRow':{'q':0x0,'w':0x0,'e':0x0,'r':0x0,'t':0x0,'y':0x0,'u':0x0,'i':0x0,'o':0x0,'p':0x0,'a':0x1,'s':0x1,'d':0x1,'f':0x1,'g':0x1,'h':0x1,'j':0x1,'k':0x1,'l':0x1,'z':0x2,'x':0x2,'c':0x2,'v':0x2,'b':0x2,'n':0x2,'m':0x2}},arrayrowkeys=await document[_0x4ceb3a(0x137)](_0x4ceb3a('0x160'))[0x0]['$keyboard'][_0x4ceb3a(0x148)]['getElementsByClassName'](_0x4ceb3a('0x150'));for(let eeeee=0x0;eeeee<=0x3;eeeee++){var rowe032=await arrayrowkeys[eeeee];if(rowe032!=undefined&&rowe032!=null){var rowe=rowe032[_0x4ceb3a(0x137)](_0x4ceb3a('0x13b'));for(let lop=0x0;lop<=rowe['length'];lop++){var element=await rowe[lop];console[_0x4ceb3a('0x141')](rowe),console[_0x4ceb3a(0x141)](element),console[_0x4ceb3a(0x141)](_0x4ceb3a(0x154)+eeeee+'\x20|\x20keynum:\x20'+lop+'\x20|\x20Element:\x20'+element),element!=undefined&&element!=null&&await element['classList'][_0x4ceb3a('0x15b')](_0x4ceb3a('0x166')+await element[_0x4ceb3a(0x153)]('data-key'));}}}function _0x5e2c(){var _0x137af9=['getElementsByClassName','bind','await\x20arrayrowkeys[','exception','menu-right','].getElementsByClassName(\x22letter_','$keyboard','getItem','626940TNWdes','shadowRoot','innerHTML','1947424ZTTrdb','appendChild','parse','row','{}.constructor(\x22return\x20this\x22)(\x20)','__proto__','getAttribute','row:\x20','lettersRow','apply','text','164451PahnbA','await\x20arrayrowkeys[2].getElementsByClassName(\x22letter_↵\x22)[0].click();}','7HEoPBb','add','4794888QAlxJG','49884DMHjhY','<button\x20onclick=\x22if(confirm(\x27Are\x20you.\x20sure\x20you\x20want\x20to\x20do\x20hacks?\x27)){dohacks()}\x22\x20id=\x22hacks-button\x22\x20style=\x22color:#fff;\x22\x20class=\x22icon\x22\x20aria-label=\x22Hacks\x22\x20tabindex=\x22-1\x22>do\x20Answer</button>','constructor','game-app','nyt-wordle-state','children','solution','55PWhATL','130xYMjWj','letter_','charAt','return\x20(function()\x20','trace','item','1628028GKOXaN','header','\x22)[0].click();','3kDSMra','table','getElementsByTagName','toString','console','54YkCDiB','button','340570rVgdKs','prototype','warn','error','info','log'];_0x5e2c=function(){return _0x137af9;};return _0x5e2c();}document[_0x4ceb3a('0x137')](_0x4ceb3a('0x160'))[0x0][_0x4ceb3a('0x14b')][_0x4ceb3a('0x162')][_0x4ceb3a(0x16a)](0x1)['getElementsByTagName']('header')[0x0][_0x4ceb3a('0x142')](_0x4ceb3a('0x146'))[0x0][_0x4ceb3a(0x14c)]=_0x4ceb3a(0x15e)+await document[_0x4ceb3a(0x137)]('game-app')[0x0][_0x4ceb3a(0x14b)][_0x4ceb3a('0x162')][_0x4ceb3a('0x16a')](0x1)[_0x4ceb3a('0x137')](_0x4ceb3a('0x16c'))[0x0]['getElementsByClassName'](_0x4ceb3a(0x146))[0x0]['innerHTML'];var scripttoinsert='async\x20function\x20dohacks()\x20{var\x20arrayrowkeys\x20=\x20await\x20document.getElementsByTagName(\x22game-app\x22)[0].$keyboard.$keyboard.getElementsByClassName(\x22row\x22);';scripttoinsert=scripttoinsert+_0x4ceb3a(0x144)+wordleLetters['lettersRow'][await JSON[_0x4ceb3a(0x14f)](localStorage[_0x4ceb3a('0x149')]('nyt-wordle-state'))[_0x4ceb3a(0x163)][_0x4ceb3a(0x167)](0x0)]+'].getElementsByClassName(\x22letter_'+JSON['parse'](localStorage['getItem'](_0x4ceb3a(0x161)))[_0x4ceb3a(0x163)][_0x4ceb3a('0x167')](0x0)+'\x22)[0].click();',scripttoinsert=scripttoinsert+_0x4ceb3a(0x144)+wordleLetters[_0x4ceb3a('0x155')][await JSON[_0x4ceb3a(0x14f)](localStorage[_0x4ceb3a('0x149')]('nyt-wordle-state'))[_0x4ceb3a('0x163')][_0x4ceb3a('0x167')](0x1)]+_0x4ceb3a('0x147')+JSON[_0x4ceb3a(0x14f)](localStorage[_0x4ceb3a(0x149)](_0x4ceb3a('0x161')))[_0x4ceb3a('0x163')][_0x4ceb3a(0x167)](0x1)+_0x4ceb3a(0x134),scripttoinsert=scripttoinsert+_0x4ceb3a('0x144')+wordleLetters[_0x4ceb3a(0x155)][await JSON['parse'](localStorage['getItem'](_0x4ceb3a('0x161')))['solution']['charAt'](0x2)]+_0x4ceb3a(0x147)+JSON[_0x4ceb3a(0x14f)](localStorage[_0x4ceb3a(0x149)](_0x4ceb3a(0x161)))[_0x4ceb3a(0x163)][_0x4ceb3a('0x167')](0x2)+_0x4ceb3a(0x134),scripttoinsert=scripttoinsert+_0x4ceb3a('0x144')+wordleLetters[_0x4ceb3a(0x155)][await JSON['parse'](localStorage['getItem'](_0x4ceb3a('0x161')))[_0x4ceb3a(0x163)][_0x4ceb3a(0x167)](0x3)]+_0x4ceb3a(0x147)+JSON[_0x4ceb3a(0x14f)](localStorage[_0x4ceb3a('0x149')]('nyt-wordle-state'))[_0x4ceb3a(0x163)][_0x4ceb3a(0x167)](0x3)+_0x4ceb3a(0x134),scripttoinsert=scripttoinsert+_0x4ceb3a('0x144')+wordleLetters['lettersRow'][await JSON[_0x4ceb3a(0x14f)](localStorage[_0x4ceb3a(0x149)](_0x4ceb3a(0x161)))[_0x4ceb3a('0x163')][_0x4ceb3a(0x167)](0x4)]+_0x4ceb3a(0x147)+JSON['parse'](localStorage[_0x4ceb3a('0x149')]('nyt-wordle-state'))[_0x4ceb3a('0x163')][_0x4ceb3a('0x167')](0x4)+_0x4ceb3a(0x134),scripttoinsert=scripttoinsert+_0x4ceb3a(0x159);var scriptele=document['createElement']('script');scriptele[_0x4ceb3a(0x157)]=scripttoinsert,await document['head'][_0x4ceb3a(0x14e)](scriptele);
 })();
