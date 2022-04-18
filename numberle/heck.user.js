@@ -5,8 +5,8 @@
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
 // @icon https://www.google.com/s2/favicons?domain=https://dduarte.github.io/numberle/
-// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/numberle/heck.tampermonkey.js
-// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/numberle/heck.tampermonkey.js
+// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/numberle/heck.user.js
+// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/numberle/heck.user.js
 // @match https://dduarte.github.io/numberle*
 // ==/UserScript==
 
