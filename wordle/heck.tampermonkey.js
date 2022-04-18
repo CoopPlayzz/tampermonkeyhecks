@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Wordle Heck
-// @version 0.0.6
+// @version 0.0.7.1
 // @description A  Wordle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
@@ -47,8 +47,10 @@ for (let eeeee = 0; eeeee <= 3; eeeee++) {
     var rowe = await arrayrowkeys[eeeee].getElementsByTagName("button")
     for (let lop = 0; lop <= rowe.length; lop++) {
         var element = await rowe[lop];
+        if(element == undefined || element == null) return;
         console.log(rowe)
         console.log(element)
+        console.log("row: " + eeeee + " | keynum: " + lop + " | Element: " + element)
         await element.setAttribute("class", "letter_" + await element.getAttribute("data-key"))
     }
 }
