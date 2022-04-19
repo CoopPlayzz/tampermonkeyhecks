@@ -10,4 +10,5 @@ this will also mainly be filled with [TamperMonkey](https://tampermonkey.net) Sc
 
 # Tamper Monkey Scripts
  - [Wordle](https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/wordle/heck.user.js)
- - [Numberle](https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/numberle/heck.user.js) | In Dev
+ - [Numberle](https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/numberle/heck.user.js)
+ - [Heardle](https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/heardle/heck.user.js) | Kinda Functional

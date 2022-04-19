@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Numberle Heck
-// @version 0.0.3
+// @version 1.0.0
 // @description A Numberle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
