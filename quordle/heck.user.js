@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Quordle Heck
-// @version 1.0.1
+// @version 0.0.2
 // @description A Quordle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
