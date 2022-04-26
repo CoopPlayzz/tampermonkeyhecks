@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name Nerdle Heck | Normal
-// @version 0.0.1
+// @version 0.0.2
 // @description A Nerdle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
 // @icon https://www.google.com/s2/favicons?domain=https://nerdlegame.com
-// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/nerdle/heck.tampermonkey.js
-// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/nerdle/heck.tampermonkey.js
+// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/nerdle/heck.user.js
+// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/nerdle/heck.user.js
 // @match https://nerdlegame.com*
 // ==/UserScript==
 

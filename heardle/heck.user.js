@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name Heardle Heck
-// @version 1.0.0
+// @version 1.0.1
 // @description A Heardle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
 // @icon https://www.google.com/s2/favicons?domain=https://www.heardle.app
-// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/heardle/heck.tampermonkey.js
-// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/heardle/heck.tampermonkey.js
+// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/heardle/heck.user.js
+// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/heardle/heck.user.js
 // @match https://*.heardle.app*
 // ==/UserScript==
 

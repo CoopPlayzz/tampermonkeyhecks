@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name Quordle Heck
-// @version 1.0.0
+// @version 1.0.1
 // @description A Quordle Hack that enters the solution for u
 // @author CoopPlayzz
 // @homepage https://github.com/CoopPlayzz/tampermonkeyhecks
 // @icon https://www.google.com/s2/favicons?domain=https://www.quordle.com
-// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/quordle/heck.tampermonkey.js
-// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/quordle/heck.tampermonkey.js
+// @updateURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/quordle/heck.user.js
+// @downloadURL https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/quordle/heck.user.js
 // @match https://www.quordle.com/*
 // @match https://beta.quordle.com/*
 // ==/UserScript==
