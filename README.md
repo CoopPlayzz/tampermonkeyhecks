@@ -14,4 +14,4 @@ this will also mainly be filled with [TamperMonkey](https://tampermonkey.net) Sc
  - [Heardle](https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/heardle/heck.user.js) | Kinda Functional
  - [Neardle](https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/neardle/heck.user.js) | Dev
  - [Quordle](https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/quordle/heck.user.js) NOTE: button take  3 seconds when u load it
- - [Waffle](https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/quordle/heck.user.js) | Testing
+ - [Waffle](https://raw.githubusercontent.com/CoopPlayzz/tampermonkeyhecks/main/waffle/heck.user.js) | Testing
